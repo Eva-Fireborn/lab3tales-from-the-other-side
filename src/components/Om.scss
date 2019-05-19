@@ -1,0 +1,25 @@
+$mainFont: 'Lato', sans-serif;
+$darkblue: #0B1230;
+$mediumblue: #041840;
+$lightblue: #311369;
+$maroon: rgb(162,2,2);
+$whitepink: #F1CDCD;
+
+.about{
+    font-family: $mainFont;
+    background-color: $lightblue;
+    border-radius: 50px;
+    padding: 20px;
+    img {
+        height: 150px;
+        margin-left: 2em;
+    }
+    a {
+        color: $whitepink;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $maroon;
+        cursor: pointer;
+    }
+}

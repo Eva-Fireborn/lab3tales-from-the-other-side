@@ -1,0 +1,72 @@
+$mainFont: 'Lato', sans-serif;
+$darkblue: #0B1230;
+$mediumblue: #041840;
+$lightblue: #311369;
+$maroon: rgb(162,2,2);
+$whitepink: #F1CDCD;
+
+.innerMenu {
+    list-style-type: none;
+    font-family: $mainFont;
+    li {
+        display: inline-block;
+        margin-left: 3em;
+        background-color: $lightblue;
+        padding: 20px;
+        border-radius: 50px 50px 50px 5px;
+    }
+    li:hover {
+        cursor: pointer;
+    }
+    .selectedLi {
+        background-color: $maroon;
+        color: $lightblue;
+    }
+}
+.story {
+    font-family: $mainFont;
+    border-radius: 50px 50px 50px 5px;
+    background-color: $mediumblue;
+    padding: 20px;
+    margin-top: 20px;
+    span:hover {
+        cursor: pointer;
+    }
+    .editStory {
+        margin-left: 2em;
+        font-size: 1.3em;
+    }
+    .removeStory {
+        font-size: 1.3em;
+    }
+    .user {
+        font-size: 0.8em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 1em;
+    }
+}
+.input {
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin: 1em 0.5em;
+    background-color: $darkblue;
+    color: $whitepink;
+    border: 1px solid $whitepink;
+    font-family: $mainFont;
+    width: 60%;
+}
+.button {
+    width: 200px;
+    background-color: $lightblue;
+    color: $whitepink;
+    font-family: $mainFont;
+    font-size: 1em;
+    padding: 0.8em;
+    border-radius: 50px;
+    border: none;
+    margin: 1em 0.5em;
+}
