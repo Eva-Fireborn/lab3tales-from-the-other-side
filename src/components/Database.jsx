@@ -15,7 +15,7 @@ const Database = () => {
 
     useEffect( () => {
         const userStoriesCollection = firebase.firestore().collection('talesFromTheDarkSide');
-        userStoriesCollection.onSnapshot( snapshot => {
+        let unsubscribe = userStoriesCollection.onSnapshot( snapshot => {
             let list = [];
             snapshot.forEach(doc => {
                 let obj = {
@@ -26,6 +26,7 @@ const Database = () => {
             })
             setUserStoriesData(list);
         })
+        return unsubscribe;
     }, [] )
 
     const handleClickInnerMenu = (tabIndex) => {
